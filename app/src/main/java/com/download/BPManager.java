@@ -34,7 +34,7 @@ public class BPManager {
 	 * 获取要下载的起始位置。
 	 */
 	public long GetStartIndex(){
-		if(!IsResuming())return 0;
+		if(!IsResuming()) return 0;
 		return this.innerTempFile.GetRangeHeaderValue();
 	}
 }
